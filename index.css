@@ -1,5 +1,6 @@
 :root{
   --violet: #8B48BF;
+  --light-violet: #a95ad7;
   --bright-blue:#3CDDF3;
   --dark-gray-blue: #1E1E26;
   --dark-blue: #232851;
@@ -178,6 +179,7 @@ nav ul a:hover{
   color: var(--dark-blue);
   font-size: 30px;
   font-weight: 700;
+  padding: 0 0 50px 0;
 }
 
 .testimonial-container{
@@ -211,3 +213,95 @@ nav ul a:hover{
   color: var(--gray);
 }
 
+.container--invitation{
+  width: 100%;
+  height: 150px;
+  background-color: var(--violet);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 0 150px 0 150px;
+}
+
+.invitation-title{
+  font-size: 45px;
+  width: 50%;
+}
+
+.invitation-button{
+  background: white;
+  color: var(--violet);
+  border:none;
+  border-radius: 50px;
+  padding: 20px 40px 20px 40px;
+}
+
+footer{
+  background: var(--dark-gray-blue);
+  width: 100%;
+  height: 40vh;
+  padding: 70px 0 70px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-img {
+  width: 150px;
+}
+
+.social-ul{
+  list-style: none;
+
+}
+
+.social-ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.simple-nav-2 ul{
+  list-style: none;
+}
+
+.simple-nav-1 ul li a{
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.simple-nav-2 ul li a{
+  text-decoration: none;
+  color: var(--light-gray);
+
+}
+
+.search-input{
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  color: var(--gray);
+}
+
+.search-btn{
+  background: var(--violet);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin: 0 0 0 20px;
+  border-radius: 20px;
+  border:none;
+}
+
+.search-btn:hover{
+  background-color: var(--light-violet);
+  cursor: pointer;
+}
