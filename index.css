@@ -1,0 +1,15 @@
+:root{
+  --violet: #8B48BF;
+  --bright-blue:#3CDDF3;
+  --dark-gray-blue: #1E1E26;
+  --dark-blue: #232851;
+  --light-gray: rgb (249, 249, 249)
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 16px;
+}
