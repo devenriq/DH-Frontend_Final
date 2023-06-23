@@ -60,6 +60,10 @@ nav ul a:hover{
   border-radius: 100px;
 }
 
+.burger-menu{
+  display: none;
+}
+
 .hero--container{
   width: 100%;
   height: 80vh;
@@ -93,7 +97,7 @@ nav ul a:hover{
 
 .benefits--container{
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-color: var(--violet);
   color: white;
   display: flex;
@@ -215,7 +219,7 @@ nav ul a:hover{
 
 .container--invitation{
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-color: var(--violet);
   color: white;
   display: flex;
@@ -270,6 +274,12 @@ footer{
   justify-content: space-between;
 }
 
+.footer-navs{
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
 .simple-nav-2 ul{
   list-style: none;
 }
@@ -301,7 +311,138 @@ footer{
   border:none;
 }
 
-.search-btn:hover{
-  background-color: var(--light-violet);
+
+.btn:hover{
   cursor: pointer;
+  background-color: var(--light-violet);
+
+}
+
+
+@media (max-width: 448px){
+  header nav, header button{
+    display: none;
+  }
+
+  .burger-menu{
+    display: inline;
+  }
+
+  .hero--container{
+    /* margin: 150px 0 0 0; */
+    flex-direction: column;
+    height: auto;
+    padding: 0 0 100px 0 ;
+    gap: 100px;
+  }
+
+  .hero--img{
+    width: 80%;
+  }
+
+  .hero--description-container{
+    width: 85%;
+  }
+
+  .benefits--container{
+    height: 300px;
+    background-color: var(--bright-blue);
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .benefits-title, .benefits-description{
+    width: 100%;
+  }
+
+  .features--container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 50px 0 50px 0;
+  }
+
+  .feature{
+    width: 100%;
+    gap:0;
+  }
+
+  .feature-number{
+    border-radius: 20px 0 0 20px;
+  }
+
+  .feature-title{
+    background-color: var(--light-violet);
+    padding: 10px 20px 10px 20px;
+    width: 90%;
+
+  }
+
+  .feature-description{
+    width: 80%;
+  }
+
+  .testimonials--container{
+    height:auto;
+    width: 100%;
+    margin: 50px 0 50px 0;
+  }
+
+  .testimonial-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .container--invitation{
+    flex-direction: column;
+    height: 400px;
+    padding: 50px 30px 50px 30px;
+    background-color: var(--bright-blue);
+  }
+
+  .invitation-button{
+    background-color: var(--dark-blue);
+    color: white;
+  }
+
+  .invitation-title{
+    width: 100%;
+    text-align: center;
+  }
+
+  footer{
+    height: 400px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .social-container{
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .social-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .social-img{
+    width: 120px;
+  }
+
+  .footer-navs{
+    gap:100px
+  }
+
 }
